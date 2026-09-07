@@ -25,8 +25,8 @@ public class Main {
         System.out.println("2 >= 2 :" + d);
         System.out.println("3 <= 3 :" + e);
         
-        // char → menyimpan satu karakter, termasuk karakter hasil escape sequence.
-        // boolean → menyimpan true/false, termasuk hasil dari perbandingan.
+        // char => menyimpan satu karakter, termasuk karakter hasil escape sequence.
+        // boolean => menyimpan true/false, termasuk hasil dari perbandingan.
         
     }
 }
