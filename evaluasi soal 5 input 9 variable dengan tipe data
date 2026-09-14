@@ -1,0 +1,61 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        // input
+        System.out.print("masukkan nama : ");
+        String nama1 = s.nextLine();
+        System.out.print("masukkan Byte : ");
+        byte angka2 = s.nextByte();
+        System.out.print("masukkan short : ");
+        short angka3 = s.nextShort();
+        System.out.print("masukkan int : ");
+        int angka4 = s.nextInt();
+        System.out.print("masukkan long : ");
+        long angka5 = s.nextLong();
+        System.out.print("masukkan float : ");
+        float angka6 = s.nextFloat();
+        System.out.print("masukkan double : ");
+        double angka7 = s.nextDouble();
+        System.out.print("masukkan char : ");
+        char huruf = s.next().charAt(0);
+        System.out.print("masukkan boolean : ");
+        boolean perbandingan = s.nextBoolean();
+        
+        //output
+        //print
+        System.out.println("======PRINT======");
+        System.out.print(nama1 + "\n");
+        System.out.print(angka2 + "\n");
+        System.out.print(angka3 + "\n");
+        System.out.print(angka4 + "\n");
+        System.out.print(angka5 + "\n");
+        System.out.print(angka6 + "\n");
+        System.out.print(angka7 + "\n");
+        System.out.print(huruf + "\n");
+        System.out.print(perbandingan + "\n");
+        //println
+        System.out.println("======PRINTLN======");
+        System.out.println(nama1);
+        System.out.println(angka2);
+        System.out.println(angka3);
+        System.out.println(angka4);
+        System.out.println(angka5);
+        System.out.println(angka6);
+        System.out.println(angka7);
+        System.out.println(huruf);
+        System.out.println(perbandingan);
+        //printf
+        System.out.println("======PRINTF======");
+        System.out.printf("%s%n", nama1);
+        System.out.printf("%d%n", angka2);
+        System.out.printf("%d%n", angka3);
+        System.out.printf("%d%n", angka4);
+        System.out.printf("%d%n", angka5);
+        System.out.printf("%.2f%n", angka6);
+        System.out.printf("%.3f%n", angka7);
+        System.out.printf("%c%n", huruf);
+        System.out.printf("%b%n", perbandingan);
+    }
+}
