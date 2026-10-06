@@ -10,7 +10,7 @@ public class Main {
         if (usia >= 13) {
             if (usia >= 60) {
                 System.out.println("Lansia");
-            } else if (usia >= 18) {
+            } else if (usia >= 20) {
                 System.out.println("Dewasa");
             } else {
                 System.out.println("Remaja"); }
