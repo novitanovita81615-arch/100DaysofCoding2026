@@ -26,7 +26,7 @@ public class Main {
                 break;
             }
 
-            System.out.print(i + " ");
+            System.out.println(i + " ");
         }
     }
 }
