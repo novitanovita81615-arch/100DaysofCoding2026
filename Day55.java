@@ -1,41 +1,32 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
-        // continue
-        System.out.println("Contoh continue:");
+        Scanner sc = new Scanner(System.in);
 
-        for (int i = 1; i <= 5; i++) {
-            if (i == 3) {
+        System.out.print("Masukkan batas: ");
+        int a = sc.nextInt();
+
+        // Menghentikan method main jika batas tidak sesuai.
+        if (a <= 0 || a > 100) {
+            System.out.println("Tidak sesuai.");
+            return;
+        }
+
+        // Menampilkan angka genap dan melewati angka ganjil.
+        for (int i = 1; i <= a; i++) {
+
+            if (i % 2 != 0) {
                 continue;
             }
-            System.out.println(i);
-        }
 
-        // break
-        System.out.println("Contoh break:");
-
-        for (int i = 1; i <= 5; i++) {
-            if (i == 3) {
+            // Menghentikan perulangan saat mencapai angka 20.
+            if (i == 20) {
                 break;
             }
-            System.out.println(i);
+
+            System.out.print(i + " ");
         }
-
-        // return
-        System.out.println("Contoh return:");
-
-        tampilkanAngka();
-
-        System.out.println("Program selesai");
-    }
-
-    static void tampilkanAngka() {
-        for (int i = 1; i <= 5; i++) {
-            if (i == 3) {
-                return;
-            }
-            System.out.println(i);
-        }
-        System.out.println("Selesai");
     }
 }
